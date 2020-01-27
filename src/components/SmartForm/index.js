@@ -52,7 +52,7 @@ class SmartForm extends Component {
             })}
 
             <button className="btn-submit" onClick={e => this.handleSubmit(e)}>
-              Ok
+              { this.props.submitTitle || "Ok" }
             </button>
           </form>
         </div>
